@@ -36,7 +36,7 @@ Unreleased
 - [ ] The error message on logout is cryptic
 
 
-## - [0.7.0] - 
+## [0.7.0]
 Unreleased 
 Focus: prepare for production app...
 
