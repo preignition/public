@@ -4,7 +4,7 @@ Pre-ignition adheres to [Semantic Versioning](http://semver.org/).
 
 We are using [this tool](https://coderwall.com/p/5cv5lg/generate-your-changelogs-with-git-log) to generate part of automated changelog.
 
-## - [0.8.0] - 
+## [0.8.0]
 Unreleased 
 ### Added 
 - [ ] buttons that induce server interaction show when waiting for server answer (e.g. check email or verify terms)
@@ -36,13 +36,28 @@ Unreleased
 - [ ] The error message on logout is cryptic
 
 
-## [0.7.0]
-Unreleased 
-Focus: prepare for production app...
+## [0.7.1]
+Unreleased
+Focus: whatever was not ready for [0.7.0]
 
-### Added 
+### Added
 - [ ] One page for ABB Bangladesh
 - [ ] Agri-specific section
+
+### Modified
+- [ ] Finalize review of scoring values
+- [ ] Format number for Money ...
+
+### Fixed
+- [ ] Update language dialog appear the second time we log-in 
+- [ ] Sometimes, completion information is reset
+- [ ] Disconnect firebase-document on error
+
+## [0.7.0]
+Released: 2016-11-19
+Focus: prepare for production app
+
+### Added 
 - [x] Coverage manager - user with rights to administer/follow-up accounts and data associated to a specific program coverage (e.g. ABB Bangladesh)
 - [x] Portfolio management page (incl. BCM, notes on the company)
 - [x] Event for coverage (e.g. new connection, new busineses, ...)
@@ -73,13 +88,10 @@ Focus: prepare for production app...
 - [x] Finalize screening questions 
 - [x] Improve the way feedback are stored in the dB (and security/index rules)
 - [x] Better way to indicate missing fields 
-- [ ] Finalize review of scoring values
 - [x] Integrate Questionnaire review / feedback
 - [x] Attach scoring to Business and not the questionnaire itself
-- [ ] Format number for Money ...
 
 ### Fixed
-- [ ] Sometimes, completion information is reset ...
 - [x] Problem with finance section not marked as completed
 - [x] Debt-option not working well
 - [x] New section are not being stored in the db (need to consolidate mech for checking initial data)
@@ -92,8 +104,6 @@ Focus: prepare for production app...
 - [x] Questionnaire Navigation (with paper-fab) activates sections that are disables (e.g. social impact or environmental impact)
 - [x] Sort on table with accessor function is not working (paper-datatable)
 - [x] favicon not linking to the correct one
-- [ ] Update language dialog appear the second time we log-in 
-- [ ] Disconnect firebase-document on error
 - [x] Problem when login : need to click twice
 - [x] Survey Feedback not saved
 - [x] x-scroll is active on main home page 
@@ -102,7 +112,10 @@ Focus: prepare for production app...
 - [x] Firebase permission error after create account
 - [x] manifest.json not served on test.preignition.org (problem with SSL cert.)
 
-## - [0.6.3] -
+### Commit details 
+[see here](https://github.com/preignition/public/blob/master/releaseNotes/v0_7_0.md)
+
+## [0.6.3]
 Released: 2016-11-02
 ### Added 
 - [x] Program coverage in admin/settings
@@ -115,7 +128,7 @@ Released: 2016-11-02
 ### Cheched
 - [x] use domain for redirecting surveys. Status: (Firebase does not support sub-domain for multi-tenant application yet)[https://groups.google.com/forum/#!searchin/firebase-talk/subdomain$20tenant%7Csort:relevance/firebase-talk/UpKNSDsICgc/9hCXbXe8BQAJ]
 
-## - [0.6.2] -
+## [0.6.2]
 Released: 2016-10-29
 ### Added 
 - [x] Added possibility to have a printer-friendly version of the questionnaire
@@ -123,7 +136,7 @@ Released: 2016-10-29
 ### Fixed
 - [x] Database lookup on collection added multiple times  
 
-## - [0.6.1] -
+## [0.6.1]
 Released: 2016-10-19
 ### Added 
 - [x] Clicking on a business row in analytics now opens the scorecard
@@ -131,7 +144,7 @@ Released: 2016-10-19
 ### Fixed
 - [x] required fields passed as required="false" are now recognized as falsy.
 
-## - [0.6.0] -
+## [0.6.0]
 Released: 2016-10-18
 Focus: analytics
 ### Added 
@@ -139,7 +152,7 @@ Focus: analytics
 - [x] new multivariate analysis library (multi-verse)
 - [x] new multivariate analysis library (multi-chart)
 
-## - [0.5.2] - 
+## [0.5.2] 
 Released: 2016-09-30
 
 ### Fixed
@@ -147,13 +160,13 @@ Released: 2016-09-30
 - [x] Edit question from survey not working anymore (we now only have a rapid edit tool from the survey itself, the rest of the survey edit is done via the admin panel)
 - [x] Redirect after create group is not correct
 
-## - [0.5.1] - 
+## [0.5.1] 
 Released: 2016-09-16 
 
 ### Fixed
 - [x] Maximum call stack error when going from `HOME` -> `ADMIN` -> `HOME`
 
-## - [0.5.0] - 
+## [0.5.0] 
 Released: 2016-09-16 
 
 Focus: workflow, admin panel (user membership, survey building tool), various bug fix.
@@ -182,9 +195,9 @@ Focus: workflow, admin panel (user membership, survey building tool), various bu
 - [x] unable to select items from survey menu
 
 ### Commit details 
-[see here](https://gitlab.com/christophe-g/pre-ignition/blob/master/releaseNotes/v0_5_0.md)
+[see here](https://github.com/preignition/public/blob/master/releaseNotes/v0_5_0.md)
 
-## - [0.4.3] -
+## [0.4.3]
 Released: 2016-08-07 
 
 ### Added 
@@ -199,15 +212,16 @@ Released: 2016-08-07
 - [x] User cannot create a new account
 
 ### Commit details 
-[see here](https://gitlab.com/christophe-g/pre-ignition/blob/master/releaseNotes/v0_4_3.md)
+[see here](https://github.com/preignition/public/blob/master/releaseNotes/v0_4_3.md)
 
-## - [0.4.2] -
+
+## [0.4.2]
 Released: 2016-08-02 
 
 ### Modified
 - [x] More compact build (gaining 50% of file size)
 
-## - [0.4.1] - 
+## [0.4.1] 
 Released: 2016-08-01
 
 ### Added 
@@ -222,9 +236,9 @@ Released: 2016-08-01
 - [x] Cleaner use of url for routing (use full url instead of hash )
 
 ### Commit details 
-[see here](https://gitlab.com/christophe-g/pre-ignition/blob/master/releaseNotes/v0_4_1.md)
+[see here](https://github.com/preignition/public/blob/master/releaseNotes/v0_4_1.md)
 
-## - [0.4.0] -
+## [0.4.0]
 Released: 2016-07-27
 Focus on questionnaire.
 
@@ -280,7 +294,7 @@ Focus on questionnaire.
 - [x] components not having focus and creating an error
      
 ### Commit details 
-[see here](https://gitlab.com/christophe-g/pre-ignition/blob/master/releaseNotes/v0_4_0.md)
+[see here](https://github.com/preignition/public/blob/master/releaseNotes/v0_4_0.md)
 
 ## [0.3.1] - 2016-06-27
 ### Modified
@@ -296,9 +310,9 @@ Focus on questionnaire.
 - [x] Business location dropdown not properly instantiated
 
 ### Commit details
-[see here](https://gitlab.com/christophe-g/pre-ignition/blob/master/releaseNotes/v0_3_1.md)
+[see here](https://github.com/preignition/public/blob/master/releaseNotes/v0_3_1.md)
 
-## - [0.3.0] - 
+## [0.3.0] 
 Released: 2016-06-23
 
 ### Added 
@@ -327,7 +341,7 @@ Released: 2016-06-23
 - Firebase OAuth problems (not being able to login on the preignition domain)
 
 
-## - [0.2.0] -
+## [0.2.0]
 Released: 2016-06-12
 First working version of the app
 
@@ -345,7 +359,7 @@ First working version of the app
 - Modified colors for a more modern theme
 
 
-## - [0.1.0] - 
+## [0.1.0] 
 Released: 2016-02-11
 Pre-ignition Prototype
 
