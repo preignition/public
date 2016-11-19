@@ -55,9 +55,11 @@ Focus: whatever was not ready for [0.7.0]
 
 ## [0.7.0]
 Released: 2016-11-19
+
 Focus: prepare for production app
 
 ### Added 
+- [x] Online presence tool (e.g. track user presence in realtime, session, online and offline status)
 - [x] Coverage manager - user with rights to administer/follow-up accounts and data associated to a specific program coverage (e.g. ABB Bangladesh)
 - [x] Portfolio management page (incl. BCM, notes on the company)
 - [x] Event for coverage (e.g. new connection, new busineses, ...)
@@ -66,8 +68,6 @@ Focus: prepare for production app
 - [ ] Image url in user profile
 - [ ] Guidance for options (e.g. type of business registered)
 - [ ] Visualize all comments under admin
-- [ ] Basic help wiki for coverage
-- [x] Online presence tool (e.g. track user presence, session, online and offline status)
 - [x] show user status in coverage (online/offline/idle)
 - [x] Store coverage information (e.g. ABB_BGD) on client the first time they enter the app
 - [x] Integrate program coverage into questionnaire preliminary checks and workflow (e.g. ask 'where are you using preigition if this info is missing')
@@ -77,13 +77,14 @@ Focus: prepare for production app
 - [x] Migrate and test data to new production domain 
 - [x] Have a way to show that we are using the test database
 - [x] New Gitlab repository with public access for release notes and bug reporting.  
+- [x] First version of help/guidance on how to operate the application (mainly program coverage section)
 
 ### Modified
 - [x] New business profile page
 - [x] Checks prior to the survey are now a separate web-component (survey-check)
 - [x] Changed the way we register membership (user belonging to admin or dev group)
 - [x] Improve/simplify main homepage
-- [x] Improve accessor for lookup items (new web-component lookup-accessor that build an accessor funciton) 
+- [x] Improve accessor for lookup items (new web-component lookup-accessor that build an accessor function) 
 - [x] Review dropdown-menu binding with database 
 - [x] Finalize screening questions 
 - [x] Improve the way feedback are stored in the dB (and security/index rules)
@@ -146,6 +147,7 @@ Released: 2016-10-19
 
 ## [0.6.0]
 Released: 2016-10-18
+
 Focus: analytics
 ### Added 
 - [x] First go at analytics as screening SME tools

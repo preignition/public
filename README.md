@@ -16,9 +16,9 @@ Entrepreneurs who are well prepared to meet investors save time and maximise the
 
 ## Preview 
 
->![detailed information about a business.](images/portfolio-business-detail.png)*detailed information about a business - the business scorecard*
+>![detailed information about a business.](https://raw.githubusercontent.com/preignition/public/master/images/portfolio-business-detail.png)*detailed information about a business - the business scorecard*
 
->![analytics.](images/analytics.png)*analytic: interactive dashboard*
+>![analytics.](https://raw.githubusercontent.com/preignition/public/master/images/analytics.png)*analytic: interactive dashboard*
 
 
 ## Who developed Preignition?
