@@ -20,8 +20,8 @@ Unreleased
 - [ ] Add connection detector (only display when offline)
 
 ### Modified
-- [ ] upgrade url routing (new version of app-route)
 - [ ] upgrade to new version of Firebase API (v.3) so as to enable uploading of documents.
+- [ ] upgrade url routing (new version of app-route)
 - [ ] Present the survey as a self-assessment test - propose to share findings with potential investors
 - [ ] Remove currency information from `appCurrent`. Instead add one additional parameter like `localeCurrent`
 - [ ] More advanced editing for questions (domainRange, ...)
@@ -43,10 +43,14 @@ Focus: whatever was not ready for [0.7.0]
 ### Added
 - [ ] One page for ABB Bangladesh
 - [ ] Agri-specific section
+- [ ] Image url in user profile
+- [ ] Guidance for options (e.g. type of business registered)
+- [ ] Visualize all comments under admin
 
 ### Modified
 - [ ] Finalize review of scoring values
 - [ ] Format number for Money ...
+- [ ] Add information on how to use sliders 
 
 ### Fixed
 - [ ] Update language dialog appear the second time we log-in 
@@ -55,7 +59,6 @@ Focus: whatever was not ready for [0.7.0]
 
 ## [0.7.0]
 Released: 2016-11-19
-
 Focus: prepare for production app
 
 ### Added 
@@ -65,9 +68,6 @@ Focus: prepare for production app
 - [x] Event for coverage (e.g. new connection, new busineses, ...)
 - [x] See who is online for a specific coverage
 - [x] Improve login experience : update view when we are actually trying to login
-- [ ] Image url in user profile
-- [ ] Guidance for options (e.g. type of business registered)
-- [ ] Visualize all comments under admin
 - [x] show user status in coverage (online/offline/idle)
 - [x] Store coverage information (e.g. ABB_BGD) on client the first time they enter the app
 - [x] Integrate program coverage into questionnaire preliminary checks and workflow (e.g. ask 'where are you using preigition if this info is missing')
@@ -107,6 +107,7 @@ Focus: prepare for production app
 - [x] favicon not linking to the correct one
 - [x] Problem when login : need to click twice
 - [x] Survey Feedback not saved
+- [x] 
 - [x] x-scroll is active on main home page 
 - [x] Wrong number of input in feedback
 - [x] Redirection after login not always working
