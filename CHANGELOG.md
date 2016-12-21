@@ -34,23 +34,29 @@ Unreleased
 - [ ] The error message on logout is cryptic
 
 ## [0.8.0]
-Unreleased - release plan : 2016-12-30
+Unreleased - release plan : 2016-12-24
 Focus: New entrepreneur-app whith revised process and content mgmt for business inclusion into a specific program (e.g. AbB)
 
 ### Added
 - [/] new sub app for entrepreneurs: entrepreneur's space. It is be the main entry-point for entrepreneurs wishing to apply to a program.
 - [x] Install and implement automatic testing infrastructure - travis, saucelabs, WTC (help testing if things break when we update the application)
+- [x] New stepper tool built
+- [x] Guide users through a series of steps before entrepreneur space is accessible
 - [ ] Agri/AbB specific section only activated when a business it linked those program
-- [ ] Image url in user profile
+- [ ] Build Facebook OAuth for allowing users to log-in with their facebook account
+- [ ] User can change Image url and display name in user profile
+- [ ] users can give email addresses and phones for other entrepreneurs potentially interested by AbB
 - [x] Integrate Business profile under entrepreneur space
+- [x] Implement verify email workflow (actually send email to email address, with a link to validate email)
 - [ ] Integrate new Fit Criteria questionnaire
-
 - [ ] Guidance for options (e.g. type of business registered)
 - [ ] Visualize all comments under admin
 
 ### Modified
 - [x] upgrade to new version of Firebase API (v.3 - very big update, enable better querying of the db, uploading of documents).
-- [ ] replace user binding with <firebase-auth> 
+- [x] all local data (appCurrent) are now stored in the dB and cached on client for proper use when connectivity is lost
+- [/] simplify workflow and program coverage handling
+- [/] replace user binding with <firebase-auth> 
 - [ ] Finalize review of scoring values
 - [ ] Format number for Money ...
 - [ ] Add information on how to use sliders 
@@ -58,6 +64,10 @@ Focus: New entrepreneur-app whith revised process and content mgmt for business 
 ### Fixed
 - [x] Lookup from firebase not working properly (e.g. default workplan). First need to upgrade to Firebase SDK 3.0
 - [x] Make sure the app is building with firebase SDK 3
+- [x] Fix theme issues with new firebase SDK
+- [x] Autofill email values
+- [x] Database update triggers way too many events (https://github.com/firebase/polymerfire/pull/166 and https://github.com/PolymerElements/app-storage/issues/83)
+- [ ]	Prevent values to be updated when we change the language (e.g. the reference to the database location changes for language lookup) 
 - [ ] Update language dialog appear the second time we log-in 
 
 ## [0.7.0]
