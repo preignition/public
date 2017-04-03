@@ -4,84 +4,100 @@ Pre-ignition adheres to [Semantic Versioning](http://semver.org/).
 
 We are using [this tool](https://coderwall.com/p/5cv5lg/generate-your-changelogs-with-git-log) to generate part of automated changelog.
 
-## [0.9.0]
-Unreleased 
-### Added 
-- [ ] buttons that induce server interaction show when waiting for server answer (e.g. check email or verify terms)
+## Features to implement
+- [ ] Animated new logo
 - [ ] [use a map instead of combo for geographic selection ](https://gitlab.com/christophe-g/pre-ignition/issues/12)
 - [ ] Assign businesses to steward managers (drag and drop tool)
+- [ ] users can give email addresses and phones for other entrepreneurs potentially interested by AbB
 - [ ] Implement Glossary in questions
-- [ ] First version of terms of service
-- [ ] Animated new logo
 - [ ] Online-Offline indicator
 - [ ] Include proper transition when lazy loading
-- [ ] Add validity for counting a question as completed (e.g. comment are valid only if length > 10)
 - [ ] Live edit of surveys sections (for testing surveys section by section)
-- [ ] Add connection detector (only display when offline)
+- [ ] User can change Image url and display name in user profile
+
+## [0.9.10]
+released  : 2017-04-03
+
+### Added 
+- [x] buttons that induce server interaction show when waiting for server answer (e.g. check email or verify terms)
+- [x] First version of terms of service
+- [x] Add validity for counting a question as completed (e.g. comment are valid only if length > 10)
+- [x] Add connection detector (only display when offline)
+- [x] New way to handle and respond to global variable changes (redux library)
 
 ### Modified
-- [ ] upgrade url routing (new version of app-route)
-- [ ] Present the survey as a self-assessment test - propose to share findings with potential investors
-- [ ] Remove currency information from `appCurrent`. Instead add one additional parameter like `localeCurrent`
-- [ ] More advanced editing for questions (domainRange, ...)
-- [ ] Augment metadata for filled-in questionnaire (business id in particular)
-- [ ] Review Navigation (follow best practices from app-route in (shop app)[https://github.com/Polymer/shop]). 
-- [ ] Decide on better workflow dataModel (workflow belongs to program Coverage - what is the relationship between workflow and questionnaire )
-- [ ] Replace and remove currentUser by user. 
-
+- [x] upgrade url routing (new version of app-route)
+- [x] Remove currency information from `appCurrent`. Instead add one additional parameter like `localeCurrent`
+- [x] More advanced editing for questions (domainRange, ...)
+- [x] Augment metadata for filled-in questionnaire (business id in particular)
+- [x] Review Navigation (follow best practices from app-route in (shop app)[https://github.com/Polymer/shop]). 
+- [x] Decide on better workflow dataModel (workflow belongs to program Coverage - what is the relationship between workflow and questionnaire )
+- [x] Replace and remove currentUser by user. 
+- [x] Improved entrepreneur space (archive feature, pinned, selection tool, drag/drop, flip )
+- [x] Improved performance via service worker on production
+- [x] Grid in portfolio shows % of filled-in questinnaires 
+ 
 ### Fixed
-- [ ] Survey navigation button killing url routing sync. (url route and view were not in sync anymore)
-- [ ] Problems with question values not being set under android tablet
-- [ ] The error message on logout is cryptic
+- [x] Problems with question values not being set under android tablet
+- [x] The error message on logout is cryptic
 
 ## [0.8.0]
-Unreleased - release plan : 2016-12-24
+released  : 2017-03-15
 alpha release: 2016-12-24
+beta release: 2017-01-16
 
 Focus: New entrepreneur-app whith revised process and content mgmt for business inclusion into a specific program (e.g. AbB)
 
 ### Added
-- [/] new sub app for entrepreneurs: entrepreneur's space. It is be the main entry-point for entrepreneurs wishing to apply to a program.
+- [x] new sub app for entrepreneurs: entrepreneur's space. It is be the main entry-point for entrepreneurs wishing to apply to a program.
 - [x] Install and implement automatic testing infrastructure - travis, saucelabs, WTC (help testing if things break when we update the application)
 - [x] New stepper tool built
+- [x] Scoring for AbB Fit questionnaire
+- [x] BCM questionnaire
 - [x] Guide users through a series of steps before entrepreneur space is accessible
 - [x] Build questionnaire structure fully dynamically (no hard-coding any more)
 - [x] Allow live modification of questionnaire (incl. in Bangla)
-- [ ] Agri/AbB specific section only activated when a business it linked those program
+- [x] Agri/AbB specific section only activated when a business it linked those program
 - [x] Build Facebook OAuth for allowing users to log-in with their facebook account
-- [ ] User can change Image url and display name in user profile
 - [x] New web component for handling localized data (e.g. currency amount) (https://beta.webcomponents.org/element/PolymerEl/paper-locale-input)
-- [ ] users can give email addresses and phones for other entrepreneurs potentially interested by AbB
 - [x] Integrate Business profile under entrepreneur space
 - [x] Implement verify email workflow (actually send email to email address, with a link to validate email)
-- [/] Integrate new Fit Criteria questionnaire
-- [ ] Guidance for options (e.g. type of business registered)
-- [ ] Visualize all comments under admin
+- [x] Integrate new Fit Criteria questionnaire
+- [x] Guidance for options (e.g. type of business registered)
+- [x] Visualize all comments under admin
+- [x] New message for reloading new version (instead of instructing users to crtl + F5)
 - [x] Google Analytics
 
 ### Modified
 - [x] upgrade to new version of Firebase API (v.3 - very big update, enable better querying of the db, uploading of documents).
 - [x] all local data (appCurrent) are now stored in the dB and cached on client for proper use when connectivity is lost
-- [/] simplify workflow and program coverage handling
-- [/] replace user binding with <firebase-auth> 
-- [x] simplify handling of user account - [x] Core refactoring (massive) so as to be able to be better prepared for HTTP2 and use polymer CLI [detail of the changes](http://gitlab.com/christophe-g/pre-ignition/commit/b6bc41a) 
-- [ ] Finalize review of scoring values
-- [ ] Format number for Money ...
-- [ ] Add information on how to use sliders 
+- [x] Improved analytics
+- [x] Integration of Redux to manage application state and synchronise it with peristent layer
+- [x] New survey engine - surveys are now only data - no hardcoded stuff
+- [x] simplify workflow and program coverage handling
+- [x] replace user binding with <firebase-auth> 
+- [x] simplify handling of user account 
+- [x] Core refactoring (massive) so as to be able to be better prepared for HTTP2 and use polymer CLI [detail of the changes](http://gitlab.com/christophe-g/pre-ignition/commit/b6bc41a) 
+- [x] Finalize review of scoring values
+- [x] Format number for Money/Currency
+- [x] Add information on how to use sliders 
+- [x] Migrate business logic from client to Firebase functions (in particular, account creation and workflow)
 
 ### Fixed
 - [x] Lookup from firebase not working properly (e.g. default workplan). First need to upgrade to Firebase SDK 3.0
+- [x] Survey navigation button killing url routing sync. (url route and view were not in sync anymore)
 - [x] Make sure the app is building with firebase SDK 3
 - [x] Fix theme issues with new firebase SDK
 - [x] Autofill email values
 - [x] Database update triggers way too many events (https://github.com/firebase/polymerfire/pull/166 and https://github.com/PolymerElements/app-storage/issues/83)
 - [x] Fix firebase race conditions when a path referencing the database changes dynamically (https://github.com/firebase/polymerfire/pull/167)
 - [x] Prevent lazy import of elements when they are already registered
-- [ ] naming discrepancy between keys coming from the database ($key) and generated by the app (key)
-- [ ]	Prevent values to be updated when we change the language (e.g. the reference to the database location changes for language lookup) 
-- [ ] Update language dialog appear the second time we log-in 
+- [x] naming discrepancy between keys coming from the database ($key) and generated by the app (key)
+- [x] Prevent values to be updated when we change the language (e.g. the reference to the database location changes for language lookup) 
+- [x] Update language dialog appear the second time we log-in 
 - [x] Questionnaire progress not reset when section change
 - [x] Login issue
+- [x] User creation issue
 
 ## [0.7.0]
 Released: 2016-11-19
@@ -133,7 +149,6 @@ Focus: prepare for production app
 - [x] favicon not linking to the correct one
 - [x] Problem when login : need to click twice
 - [x] Survey Feedback not saved
-- [x] 
 - [x] x-scroll is active on main home page 
 - [x] Wrong number of input in feedback
 - [x] Redirection after login not always working
