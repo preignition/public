@@ -15,7 +15,12 @@ We are using [this tool](https://coderwall.com/p/5cv5lg/generate-your-changelogs
 - [ ] Live edit of surveys sections (for testing surveys section by section)
 - [ ] User can change Image url and display name in user profile
 
-## [0.9.10]
+## [0.9.181]
+unreleased
+
+
+
+## [0.9.18]
 released  : 2017-04-03
 
 ### Added 
@@ -40,6 +45,7 @@ released  : 2017-04-03
 ### Fixed
 - [x] Problems with question values not being set under android tablet
 - [x] The error message on logout is cryptic
+- [x] Section not marked as completed even whe they are
 
 ## [0.8.0]
 released  : 2017-03-15
