@@ -4,20 +4,31 @@ Pre-ignition adheres to [Semantic Versioning](http://semver.org/).
 
 We are using [this tool](https://coderwall.com/p/5cv5lg/generate-your-changelogs-with-git-log) to generate part of automated changelog.
 
-## Features to implement
+## Features to implement (updated regularly)
+
+### Layout/Interface
 - [ ] Animated new logo
 - [ ] [use a map instead of combo for geographic selection ](https://gitlab.com/christophe-g/pre-ignition/issues/12)
-- [ ] Assign businesses to steward managers (drag and drop tool)
-- [ ] users can give email addresses and phones for other entrepreneurs potentially interested by AbB
-- [ ] Implement Glossary in questions
 - [ ] Online-Offline indicator
 - [ ] Include proper transition when lazy loading
-- [ ] Live edit of surveys sections (for testing surveys section by section)
+
+### Business Logic
+- [ ] Assign businesses to steward managers (drag and drop tool)
+
+### Major features/App requirements
+- [ ] Better guide for new users
+- [ ] Survey builder (a la Google Forms)
+- [ ] Workflow builder
+- [ ] Re-implement application events (e.g. when new data is available, or new account created)
+
+### Minor features/App requirements
+- [ ] users can give email addresses and phones for other entrepreneurs potentially interested by AbB
+- [ ] Implement Glossary in questions
 - [ ] User can change Image url and display name in user profile
+
 
 ## [0.9.181]
 unreleased
-
 
 
 ## [0.9.18]
