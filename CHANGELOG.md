@@ -1,34 +1,25 @@
 # Change Log
 All notable changes to pre-ignition will be documented in this file.
-Pre-ignition adheres to [Semantic Versioning](http://semver.org/).
+Versioning used semanting [Semantic Versioning](http://semver.org/) at the beginning of its developpment cycle. This approach has proven to be difficult to follow with a [continuous depolyment](http://blog.ploeh.dk/2013/12/10/semantic-versioning-with-continuous-deployment). Now we are using those rules of thumb to decide on our versionning rules: 
+- increment the major version (e.g. from 3.2.9 to 4.0.0) when we introduce breaking changes in public API
+- increment the minor version (e.g. from 1.3.2 to 1.4.0) when we add important new features
+- increment patch version (e.g. from 1.3.211 to 1.3.212) every time we deploy a new release (it can be a mix of bug fix and minor new features)/
 
 We are using [this tool](https://coderwall.com/p/5cv5lg/generate-your-changelogs-with-git-log) to generate part of automated changelog.
 
-## Features to implement (updated regularly)
 
-### Layout/Interface
-- [ ] Animated new logo
-- [ ] [use a map instead of combo for geographic selection ](https://gitlab.com/christophe-g/pre-ignition/issues/12)
+## [0.9.183]
+### Added 
+- [x] Animated new logo
+- [x] New landing page with interactive map 
 - [ ] Online-Offline indicator
-- [ ] Include proper transition when lazy loading
+- [ ] New public/private API for querying live data
 
-### Business Logic
-- [ ] Assign businesses to steward managers (drag and drop tool)
-
-### Major features/App requirements
-- [ ] Better guide for new users
-- [ ] Survey builder (a la Google Forms)
-- [ ] Workflow builder
-- [ ] Re-implement application events (e.g. when new data is available, or new account created)
-
-### Minor features/App requirements
-- [ ] users can give email addresses and phones for other entrepreneurs potentially interested by AbB
-- [ ] Implement Glossary in questions
-- [ ] User can change Image url and display name in user profile
+### Modified
 
 
-## [0.9.181]
-unreleased
+### Fixed 
+- [x] survey print layout off for long text
 
 
 ## [0.9.18]
